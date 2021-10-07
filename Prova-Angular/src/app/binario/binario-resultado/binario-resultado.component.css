@@ -1,0 +1,15 @@
+mat-expansion-panel-header {
+}
+
+mat-accordion {
+  width: 100%;
+}
+
+mat-expansion-panel {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  text-align: center;
+}
