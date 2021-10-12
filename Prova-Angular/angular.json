@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": false
+    "analytics": "d9bf0719-deb8-43cb-b948-02a1d7653dad"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Prova-Angular": {
+    "Calcula-Binarios": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Prova-Angular",
+            "outputPath": "dist/Calcula-Binarios",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +31,8 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Prova-Angular:build:production"
+              "browserTarget": "Calcula-Binarios:build:production"
             },
             "development": {
-              "browserTarget": "Prova-Angular:build:development"
+              "browserTarget": "Calcula-Binarios:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Prova-Angular:build"
+            "browserTarget": "Calcula-Binarios:build"
           }
         },
         "test": {
@@ -107,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "Prova-Angular"
+  "defaultProject": "Calcula-Binarios"
 }

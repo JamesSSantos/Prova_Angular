@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/Prova-Angular'),
+      dir: require('path').join(__dirname, './coverage/Calcula-Binarios'),
       subdir: '.',
       reporters: [
         { type: 'html' },

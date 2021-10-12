@@ -1,5 +1,33 @@
 <app-cabecalho></app-cabecalho>
-<main>
-    <app-binario></app-binario>
-    <app-binario-resultado></app-binario-resultado>
-</main>
+<div></div>
+<div class="card">
+  <form>
+    <div class="form-group">
+      <div class="sub-titulo">
+        Converte Binário para Decimal
+        <hr>
+      </div>
+      <div class="card-body">
+        <div class="container ">
+          <div class="row binario">
+            <div class="col-12">
+              <label class="col-4">Número Binário</label>
+            </div>
+            <input type="binario" [(ngModel)]="numero" name="number" class="form-control" id="binario"
+              placeholder="Digite um número binário">
+          </div>
+          <div class="row">
+            <label class="col-3">Número Decimal</label>
+            <input type="decimal" class="form-control col-4" id="decimal" [(ngModel)]="decimal" name="decimal"
+              [disabled]="true">
+          </div>
+          <div class="col-1 button">
+            <br>
+            <button type="button" class="btn btn-primary btn-block" (click)="calcular()">Calcular</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </form>
+</div>
